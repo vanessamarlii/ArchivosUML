@@ -1,0 +1,17 @@
+@startuml
+
+class Punto2D {
+    - x: float
+    - y: float
+}
+
+class Circunferencia {
+    - radio: float
+    - centro: Punto2D
+    + calcularArea(): float
+    + calcularPerimetro(): float
+}
+
+Circunferencia --> Punto2D : centro
+
+@enduml
