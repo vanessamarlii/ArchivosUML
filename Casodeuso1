@@ -1,0 +1,10 @@
+@startuml
+class Persona {
+    - String nombre
+    - String apellidos
+    - int añoDeNacimiento
+
+    + int calcularEdad(int añoActual)
+}
+
+@enduml
