@@ -1,10 +1,19 @@
 @startuml
 class Persona {
-    - String nombre
-    - String apellidos
-    - int añoDeNacimiento
+ 
+    - m_nombre: string
+    - m_apellidos: string
+    - m_yearNacimiento: int
 
-    + int calcularEdad(int añoActual)
+    + Persona()
+    + Persona(nombre: string, apellidos: string, yearNacimiento: int)
+
+    + getEdad(currentYear: int): int
+    + getNombre(): string
+    + setNombre(m_nombre: string): void
+    + getApellidos(): string
+    + setApellidos(m_apellidos: string): void
+    + getYearNacimiento(): int
+    + setYearNacimiento(m_yearNacimiento: int): void
 }
-
 @enduml
